@@ -1,0 +1,96 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:gravity="fill"
+    tools:context="com.rahayu.kaspribadi.Awal" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/header_footer"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingBottom="10dp" >
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/backgroud_saldo"
+            android:paddingBottom="2dp"
+            android:paddingLeft="90dp"
+            android:paddingRight="90dp"
+            android:text="@string/saldo"
+            android:textColor="@color/text_coklat"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/txt_saldo"
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tableRow1"
+        android:layout_below="@+id/linearLayout1"
+        android:layout_centerHorizontal="true" >
+        
+            <ListView
+                android:id="@+id/listView1"
+                android:textColor="@color/white"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+            </ListView>
+
+        
+    </ScrollView>
+
+    <TableRow
+        android:id="@+id/tableRow1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/scrollView1"
+        android:layout_alignParentBottom="true"
+        android:background="@color/header_footer"
+        android:gravity="center_vertical|center_horizontal|center"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp" >
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/button_masuk"
+            android:text="+"
+            android:textColor="@color/white"
+            android:textSize="20pt"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/button_keluar"
+            android:minHeight="50dip"
+            android:text="-"
+            android:textColor="@color/white"
+            android:textSize="20pt"
+            android:textStyle="bold" />
+    </TableRow>
+
+</RelativeLayout>

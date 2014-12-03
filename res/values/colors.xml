@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="crem">#e6ddc3</color>
+    <color name="green">#45c921</color>
+    <color name="button_keluar">#e02f38</color>
+    <color name="text_coklat">#9c9584</color>
+    <color name="header_footer">#c7bfa9</color>
+    <color name="backgroud">#1f1f1f</color>
+    
+    
+</resources>
